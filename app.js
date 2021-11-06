@@ -1,21 +1,18 @@
-let incDecBtns = document.querySelectorAll(".quantity-controller--button");
-let products = document.querySelectorAll(".poduct-counter");
-console.log(products)
+let quentityControllerDivs = document.querySelectorAll(".quantity-controller")
 
- console.log(incDecBtns)
+console.log(quentityControllerDivs)
+quentityControllerDivs.forEach((quentityControllerDiv)=>{
+    let quantityP = quentityControllerDiv.querySelector("#product-quantity");
+    quentityControllerDiv.children[0].addEventListener("click",()=>{
+        quantityP.textContent = parseInt(quantityP.textContent) -1;
+        if(quantityP.textContent == "0"){
+            alert("Do you realy want to remove the prudoct from checkout box")
+             quentityControllerDiv.parentElement.parentElement.remove();
+        }
+    });
+    quentityControllerDiv.children[2].addEventListener("click",()=>{
+        quantityP.textContent = parseInt(quantityP.textContent) +1
+    })
+});
 
- let counter1 = 1;
-
- incDecBtns.forEach(function(btn){
-     btn.addEventListener("click",(e)=>{
-      let actions = e.currentTarget.classList
-      let childP = e.currentTarget.parentElement.children[1];
-       console.log(childP)
-      
-    if(actions.contains("plus")){
-        counter1++
-        childP.textContent = counter1;
-    }
- })
- })
  
