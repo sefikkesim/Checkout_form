@@ -1,0 +1,245 @@
+body{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+   
+}
+.title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#checkout-title{
+    display:inline-block;
+    font-size: 2rem;
+    margin: 1.1rem 0 1.1 rem 0;
+}
+main{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 612px;
+}
+h1{
+    display: block;
+    font-size: 18px ;
+    justify-content: center;
+}
+form{
+    width: 21rem;
+    height: 38rem;
+    margin: 0 150px 0 0 ;
+}
+.contact-information{
+    width: 372px;
+    height: 100px;;
+}
+.campo{
+    display: block;
+    width:21rem ;
+    height:3.8rem ;
+    font-size: 1rem;
+    margin: 10px 0 10px 0;
+    
+}
+label{
+    font-size: 12px;
+    text-decoration: none solid rgb(79, 79, 79);
+    width: 372px;
+    height: 15px;
+    margin: 20px 0 20px 0;
+    color: #4f4f4f;
+}
+#user-email,
+#user-phone-number,
+#user-full-name,
+#user-address,
+#user-city{
+    font-size: 14px;
+    text-decoration: none solid rgb(130, 130, 130);
+    color: #828282 ;
+    width: 372px;
+    height: 16px;
+    border: 1px solid #828282;
+    padding: 8px 5px 8px 35px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.area{
+    display: flex;
+    flex-direction: row;
+}
+#country-field{
+    display: inline-block;
+    width: 117px;
+    height: 70px;
+    margin: 10px 7px 10px 0; 
+}
+#user-country{
+    width: 117px;
+    height: 35px;
+    border: 1px solid #828282;
+    border-radius: 5px;
+    text-align: center;
+}
+#postal-code-field{
+    width: 188px;
+    height: 69px;
+    margin: 10px 0 10px 0;
+}
+#user-postal-code{
+    display: inline-block;
+    width: 188px;
+    height: 16px;
+    text-decoration: none solid rgb(130, 130, 130);
+    border: 1px solid #828282;
+    padding: 8px 5px 8px 35px;
+    border-radius: 5px;
+}
+
+#product-painel{
+    display: flex;
+    width: 320px;
+    height: 365px;
+    background-color: #eee;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 10px 20px 10px 5px;
+}
+
+img{
+    width: 96px;
+    height: 110px;
+    border-radius: 10px;
+    margin: 0 20px 0 0;
+
+}
+.product-info{
+    display: flex;
+    flex-direction: column;
+    width: 204px;
+    height: 110px;
+    
+}
+.quantity-controller{
+    display: flex;
+    width: 102px;
+    height: 35px;
+    border: 1px solid #888;
+    margin: 0 ;
+    border-radius: 5px; 
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.quantity-controller--button{
+    display: flex;
+    width: 20.5px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: 900;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    border: none;
+}
+.quantity-controller p{
+    font-size: small;
+  
+}
+.button{
+    display: flex;
+}
+#but-submit{
+    width: 75px;
+    height: 43px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2994a;
+    color: white;
+    font-size: 15px;
+    margin: auto;
+}
+.product{
+    display: flex;
+    margin: 10px 20px 10px 20px;
+   
+  
+}
+.product-info{
+    display: flex;
+    flex-direction: column;
+    color:#4e5150;
+}
+
+h2{
+    font-size: 15px;
+    margin: 0; 
+}
+
+.price{
+    margin-top: 40px;
+}
+
+.buy-detail{
+    display: flex;
+    line-height: 0;
+    
+}
+#shipping,#total{
+    justify-content: space-between;
+    border-top: 1px solid #bdbdbd;
+}
+strong{
+    color: #f2994a;
+}
+.line-through{
+    text-decoration:line-through;
+    font-size: small;
+}
+   
+@media (max-width:850px ) {
+
+
+main{
+    width: 40%;
+    flex-direction: column-reverse;
+    margin: auto;
+}
+#product-painel{
+     margin-top: 60px;
+}
+
+#user-email,
+#user-phone-number,
+#user-full-name,
+#user-address,
+#user-city{
+    width: 300px;
+    height: 16px;
+}
+
+#user-country{
+    width: 100px;
+    height: 35px;
+    text-align: end;
+}
+#user-postal-code{
+    width: 150px;
+}   
+#but-submit{ 
+    position: relative;
+    width: 60px;
+    height: 35px;
+    font-size: 10px;
+    top: 360px;
+    left: 50px;   }
+}
+select{
+    text-align: right;
+}
