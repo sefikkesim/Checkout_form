@@ -4,3 +4,4 @@
 * When value is 0, product’s row will be showed blurred
 * When I click remove button on product's row, I can delete a product in the cart.
 * When I change any combination of product chart(plus, minus, remove etc.), I want to see the new calculation of chart's prices in concerned fields.
+![Checkout form](https://user-images.githubusercontent.com/91076807/140639069-69647039-857e-4941-bcbc-0678ccf58754.gif)
